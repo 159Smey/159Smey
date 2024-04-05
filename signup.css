@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+.content{
+    margin-top: 10px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+form{
+    width: 500px;
+    height: 600px;
+    border: 1px solid ;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+}
+h2{
+    text-align: center;
+    padding: 12px;
+    background-color:rgba(80, 80, 223, 0.817);
+}
+label{
+    margin-top: 7px;
+    font-size: 20px;
+    padding: 5px;
+    margin-left: 15px;
+}
+input{
+    font-size: 20px;
+    padding: 7px;
+    margin: 0 20px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid;
+}
+#sex{
+    margin-left: -20px;
+}
+#submit{
+    margin-top: 25px;
+    background-color:rgba(216, 129, 48, 0.817);
+}

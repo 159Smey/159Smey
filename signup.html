@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="content">
+        <form action="loop.html" method="post">
+            <h2>Form Register</h2>
+            <label for="firstname">First Name</label>
+            <input type="text" id="firstname" name="firstname" required>
+            <label for="lastname">Last Name</label>
+            <input type="text" id="lastname" name="lastname" required>
+            <label for="">Gender</label>
+            <div>
+                <input type="radio" name="Gender" >
+                <label for="" id="sex">Male</label>
+                <input type="radio" name="Gender" >
+                <label for="" id="sex">Female</label>
+                <input type="radio" name="Gender" >
+                <label for="" id="sex">Other</label>
+            </div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required> 
+            <label for="number">Phone</label>
+            <input type="number" id="number" name="number" required>
+            <input type="submit" value="Submit" id="submit">
+        </form>
+    </div>
+    <script>
+        document.getElementById("submit").onclick = function(){
+            let password = document.getElementById("password");
+            let lastname = document.getElementById("lastname");
+            let firstname = document.getElementById("firstname");
+            let email = document.getElementById("email");
+            let number = document.getElementById("number");
+            if(password.value&&lastname.value&&firstname.value&&number.value&&email.value){
+                alert("Sign Up Success!");
+            }
+            else{
+                alert("Sign Up Faile!");
+            }
+        };
+    </script>
+</body>
+</html>
